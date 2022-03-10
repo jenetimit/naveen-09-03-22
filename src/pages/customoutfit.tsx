@@ -12,6 +12,12 @@ import { useCart } from "@contexts/quick-cart/cart.context";
 import { CoreApi, ParamsType } from "@utils/api/core.api";
 import { API_ENDPOINTS } from "@utils/api/endpoints";
 
+type Props = {
+  variant?: "helium" | "neon" | "argon" | "oganesson" | "single" | "big" | "dod" | "dodcart";
+  handleDod2Cart(event: React.MouseEvent<HTMLButtonElement | MouseEvent>): void;
+  disabled?: boolean;
+};
+
 const ProductService = new CoreApi(API_ENDPOINTS.PRODUCTS);
 
 const CustomOutfit = () => {

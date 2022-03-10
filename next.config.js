@@ -35,7 +35,8 @@ module.exports = withPWA({
       "localhost",
       "res.cloudinary.com",
       "navin.imitpark.co.in",
-      "navin.gitdr.com/api/public"
+      "navin.gitdr.com",
+      "192.168.1.69"
     ],
   },
   typescript: {
